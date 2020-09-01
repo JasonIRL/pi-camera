@@ -6,9 +6,9 @@ echo 0xdead > /sys/kernel/config/usb_gadget/pi4/idProduct
 echo 0x0001 > /sys/kernel/config/usb_gadget/pi4/bcdDevice
 echo 0x0200 > /sys/kernel/config/usb_gadget/pi4/bcdUSB
 
-echo 0x0e > /sys/kernel/config/usb_gadget/pi4/bDeviceClass
-echo 0x03 > /sys/kernel/config/usb_gadget/pi4/bDeviceSubClass
-echo 0x00 > /sys/kernel/config/usb_gadget/pi4/bDeviceProtocol
+echo 0xEF > /sys/kernel/config/usb_gadget/pi4/bDeviceClass
+echo 0x02 > /sys/kernel/config/usb_gadget/pi4/bDeviceSubClass
+echo 0x01 > /sys/kernel/config/usb_gadget/pi4/bDeviceProtocol
 
 mkdir /sys/kernel/config/usb_gadget/pi4/strings/0x409
 echo 100000000d2386db > /sys/kernel/config/usb_gadget/pi4/strings/0x409/serialnumber
