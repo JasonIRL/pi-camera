@@ -3,7 +3,7 @@ mkdir /sys/kernel/config/usb_gadget/pi4
 
 echo 0x0c89 > /sys/kernel/config/usb_gadget/pi4/idVendor
 echo 0xdead > /sys/kernel/config/usb_gadget/pi4/idProduct
-echo 0x0001 > /sys/kernel/config/usb_gadget/pi4/bcdDevice
+echo 0x0100 > /sys/kernel/config/usb_gadget/pi4/bcdDevice
 echo 0x0200 > /sys/kernel/config/usb_gadget/pi4/bcdUSB
 
 echo 0xEF > /sys/kernel/config/usb_gadget/pi4/bDeviceClass
