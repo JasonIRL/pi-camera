@@ -2,13 +2,13 @@
 Description=Enables the Pi Webcam Service
 
 [Service]
-ExecStart=/home/pi/uvc-gadget/piwebcam
+ExecStart=/home/pi/pi-camera/piwebcam
 StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=piwebcam
 User=pi
 Group=pi
-WorkingDirectory=/home/pi/uvc-gadget/
+WorkingDirectory=/home/pi/pi-camera/
 
 [Install]
 WantedBy=basic.target
