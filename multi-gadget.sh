@@ -1,19 +1,19 @@
 #!/bin/bash
 mkdir /sys/kernel/config/usb_gadget/pi4
 
-echo 0x045e > /sys/kernel/config/usb_gadget/pi4/idVendor
+echo 0x0c89 > /sys/kernel/config/usb_gadget/pi4/idVendor
 echo 0xdead > /sys/kernel/config/usb_gadget/pi4/idProduct
 echo 0x0001 > /sys/kernel/config/usb_gadget/pi4/bcdDevice
 echo 0x0200 > /sys/kernel/config/usb_gadget/pi4/bcdUSB
 
-echo 0xEF > /sys/kernel/config/usb_gadget/pi4/bDeviceClass
-echo 0x02 > /sys/kernel/config/usb_gadget/pi4/bDeviceSubClass
-echo 0x01 > /sys/kernel/config/usb_gadget/pi4/bDeviceProtocol
+echo 0x0e > /sys/kernel/config/usb_gadget/pi4/bDeviceClass
+echo 0x03 > /sys/kernel/config/usb_gadget/pi4/bDeviceSubClass
+echo 0x00 > /sys/kernel/config/usb_gadget/pi4/bDeviceProtocol
 
 mkdir /sys/kernel/config/usb_gadget/pi4/strings/0x409
 echo 100000000d2386db > /sys/kernel/config/usb_gadget/pi4/strings/0x409/serialnumber
-echo "Microsoft" > /sys/kernel/config/usb_gadget/pi4/strings/0x409/manufacturer
-echo "Pi Camera" > /sys/kernel/config/usb_gadget/pi4/strings/0x409/product
+echo "Honda" > /sys/kernel/config/usb_gadget/pi4/strings/0x409/manufacturer
+echo "Pi Sight Camera" > /sys/kernel/config/usb_gadget/pi4/strings/0x409/product
 mkdir /sys/kernel/config/usb_gadget/pi4/configs/c.2
 mkdir /sys/kernel/config/usb_gadget/pi4/configs/c.2/strings/0x409
 echo 500 > /sys/kernel/config/usb_gadget/pi4/configs/c.2/MaxPower
